@@ -37,21 +37,23 @@
                             <!-- memory-details -->
                             <div class="memory-field my-5">
                                 <h5>Memory</h5>
-                                <button>8GB unified memory</button>
-                                <button>16GB unified memory</button>
+                                <button id="memory-8gb" class="btn-custom">8GB unified memory</button>
+                                <button id="memory-16gb" class="btn-custom">16GB unified memory</button>
                             </div>
                             <!-- storage-details -->
                             <div class="storage-field my-5">
                                 <h5>Storage</h5>
-                                <button>256GB SSD storage</button>
-                                <button>512GB SSD storage</button>
-                                <button>1TB SSD storage</button>
+                                <button id="storage-256gb" class="btn-custom">256GB SSD storage</button>
+                                <button id="storage-512gb" class="btn-custom">512GB SSD storage</button>
+                                <button id="storage-1tb" class="btn-custom">1TB SSD storage</button>
                             </div>
                             <!-- delivery-details -->
                             <div class="delivery-field my-5">
                                 <h5>Choose your delivery option</h5>
-                                <button>Friday, Aug 25 FREE Prime Delivery</button>
-                                <button>Friday, Aug 21 Delivery charge $20</button>
+                                <button id="free-delivery" class="btn-custom">Friday, Aug 25 FREE Prime
+                                    Delivery</button>
+                                <button id="charged-delivery" class="btn-custom">Friday, Aug 21 Delivery charge
+                                    $20</button>
                             </div>
                             <!-- pricing-details -->
                             <div class=" pricing-field w-75 p-2">
@@ -73,7 +75,7 @@
                                             <h5>Extra Memory Cost</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <h5>$<span>0</span></h5>
+                                            <h5>$<span id="memory-cost">0</span></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -81,10 +83,10 @@
                                 <div class="single-price border-bottom py-1">
                                     <div class="row">
                                         <div class="col-md-8">
-                                            <h5>Extra Storahe Cost</h5>
+                                            <h5>Extra Storage Cost</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <h5>$<span>0</span></h5>
+                                            <h5>$<span id="storage-cost">0</span></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +97,7 @@
                                             <h5>Delivery charge</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <h5>$<span>0</span></h5>
+                                            <h5>$<span id="delivery-charge">0</span></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +108,7 @@
                                             <h5>Total Price</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <h5>$<span>1299</span></h5>
+                                            <h5>$<span id="total-price">1299</span></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -116,9 +118,11 @@
                                         <div class="col-md-12">
                                             <h5>Add Promo code</h5>
                                             <div class="promo-input d-flex align-items-center">
-                                                <input type="text" class="py-1">
-                                                <button type="submit" class="btn btn-danger">Apply</button>
+                                                <input id="promo-input" type="text" class="py-1">
+                                                <button id="promo-btn" type="submit"
+                                                    class="btn btn-danger">Apply</button>
                                             </div>
+                                            <p>stevekaku</p>
                                         </div>
                                     </div>
                                 </div>
@@ -130,7 +134,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="total-final border-top text-center py-3">
-                            <h2>Total:$<span>1299</span></h2>
+                            <h2>Total:$<span id="final-total">1299</span></h2>
                         </div>
                     </div>
                 </div>
@@ -138,9 +142,6 @@
             </div>
         </section>
     </main>
-
-
-
 
 
     <!-- main js -->

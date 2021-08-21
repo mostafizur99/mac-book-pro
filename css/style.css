@@ -1,0 +1,10 @@
+.btn-custom:hover {
+    color: #fff;
+    background: #212529;
+    border-color: #212529;
+}
+.btn-custom:focus {
+    border-color: #212529;
+    box-shadow: 0 0 0 0.25rem rgb(88 82 83 / 50%);
+    
+}
